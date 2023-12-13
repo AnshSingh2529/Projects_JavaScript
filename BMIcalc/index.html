@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body style="background-color: skyblue; color: alice-blue">
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="https://github.com/AnshSingh2529">Github</a>
+      <a
+        style="
+          text-decoration: none;
+          border: 2px solid black;
+          border-radius: 7px;
+          font-size: 17px;
+          background-color: rgb(56, 54, 54);
+          font-weight: 9px;
+          margin: 4px;
+        "
+        title="Return to Home page"
+        href="./index.html"
+        >Refresh!</a
+      >
+    </nav>
+
+    <span>
+      <form id="form">
+        <h2
+          style="
+            border-bottom: 5px solid black;
+            font-family: cursive;
+            text-shadow: 1px 2px 5px black;
+          "
+        >
+          CALCULATE BODY MASS INDEX
+        </h2>
+        <p>
+          <label>Height in cm: </label
+          ><input
+            style="background-color: beige; border-radius: 5px"
+            type="number"
+            id="height"
+          />
+        </p>
+        <p>
+          <label>Weight in Kg: </label
+          ><input
+            style="background-color: beige; border-radius: 5px"
+            type="number"
+            id="weight"
+          />
+        </p>
+
+        <div style="display: flex">
+          <button id="butn" title="Click here!">Calculate BMI</button>
+
+          <div
+            id="results"
+            style="
+              margin-left: 10px;
+              font-weight: bold;
+              border: 2px solid black;
+              border-radius: 4px;
+            "
+          >
+            <label title="Your Body Mass Index">Your BMI</label>
+          </div>
+        </div>
+
+        <div class="instructions">
+          <h2>BMI Categories:-</h2>
+          <div id="ins">
+            <p>Underweight = <18.5</p>
+            <p>Normal weight = 18.5–24.9</p>
+            <p>Overweight = 25–29.9</p>
+            <p>Obesity = BMI of 30 or greater</p>
+          </div>
+        </div>
+      </form>
+    </span>
+  </body>
+  <script src="bmi.js"></script>
+</html>

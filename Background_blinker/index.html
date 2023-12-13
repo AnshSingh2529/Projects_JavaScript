@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Background Blinker</title>
+  </head>
+  <body style="background-color: beige; color: black">
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="https://github.com/AnshSingh2529">Github</a>
+    </nav>
+    <h1
+      style="
+        font-family: mono;
+        text-shadow: 1px 2px 5px black;
+        display: flex;
+        justify-content: center;
+      "
+    >
+      BACKGROUND BLINKER
+    </h1>
+  </body>
+  <main style="display: flex; justify-content: space-evenly; height: 90px">
+    <!-- for start button -->
+    <button
+      id="start"
+      style="
+        background-color: orange;
+        font-size: 20px;
+        font-family: cursive;
+        border-radius: 20px;
+        text-shadow: 1px 2px 4px black;
+      "
+    >
+      Start
+    </button>
+
+    <!-- for stop button -->
+    <button
+      id="stop"
+      style="
+        background-color: orange;
+        font-size: 20px;
+        font-family: cursive;
+        border-radius: 20px;
+        text-shadow: 1px 2px 4px black;
+      "
+    >
+      Stop
+    </button>
+  </main>
+
+  <footer style="padding-top: 100px; padding-left: 30px; font-size: 20px">
+    <div>
+      <span
+        >This is
+        <span style="text-shadow: 1px 2px 3px orange"
+          >BACKGROUND COLOR CHANGER</span
+        >
+        program.</span
+      >
+      <br />
+      <br />
+      <span
+        >Rules :- <br />
+        1.click on START to continuously changing the color of Background.
+        <br />
+        2.click on STOP to pause the program.
+      </span>
+    </div>
+  </footer>
+  <script src="blinker.js"></script>
+</html>
